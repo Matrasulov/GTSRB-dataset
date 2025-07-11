@@ -20,3 +20,16 @@ This project implements image classification on the German Traffic Sign Recognit
 - Image classification with accuracy tracking
 - Transfer learning with frozen and unfrozen layers
 - Side-by-side performance comparison of both models
+
+
+## 📊 Training Curves
+
+### 🔹 Custom CNN Accuracy
+
+![CNN Accuracy](images/cnn_accuracy.png)
+
+---
+
+### 🔹 Fine-Tuned ResNet18 Accuracy
+
+![ResNet Accuracy](images/resnet_accuracy.png)
