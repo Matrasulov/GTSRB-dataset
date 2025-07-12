@@ -1,46 +1,37 @@
-# GTSRB Traffic Sign Classification
+# 🚦 GTSRB Traffic Sign Classification using PyTorch
 
-This project implements image classification on the German Traffic Sign Recognition Benchmark (GTSRB) dataset using two approaches:
-1. A custom-built Convolutional Neural Network (CNN)
-2. Fine-tuning a pre-trained ResNet-18 model
+This project focuses on **multi-class image classification** of the **German Traffic Sign Recognition Benchmark (GTSRB)** dataset. Two deep learning approaches were used:
 
-## 🧠 Project Highlights
+1. ✅ A custom-built CNN model  
+2. ✅ Transfer learning with fine-tuned **ReXNet v1.5** using the `timm` library
 
-- **Dataset**: GTSRB (German Traffic Sign Recognition Benchmark)
-- **Framework**: PyTorch, Torchvision
-- **Approaches**:
-  - Custom CNN model trained from scratch
-  - Transfer learning with ResNet-18 using fine-tuning
-- **Data Handling**: Automatic download with `torchvision.datasets.GTSRB`
-- **Transforms**: Image resizing and normalization (ImageNet stats)
+---
 
-## 🔧 Features
+## 🗂️ Dataset Overview
 
-- Modular training and evaluation pipeline
-- Image classification with accuracy tracking
-- Transfer learning with frozen and unfrozen layers
-- Side-by-side performance comparison of both models
+- **Name**: [GTSRB - German Traffic Sign Recognition Benchmark](http://benchmark.ini.rub.de/?section=gtsrb&subsection=news)
+- **Classes**: 43 unique traffic signs  
+- **Total Images**: 39,270  
+- **Split**:
+  - Training: 80%
+  - Validation: 20%
+  - Test: Predefined split
 
-## Plotting random images
-<img width="1589" height="996" alt="image" src="https://github.com/user-attachments/assets/0d7cb572-6172-4f51-9ef1-33839344a490" />
+---
 
-## Class imbalance analysis
-<img width="1389" height="390" alt="image" src="https://github.com/user-attachments/assets/41015714-4373-4e1e-8bf5-35c08a95a9a3" />
-<img width="1389" height="390" alt="image" src="https://github.com/user-attachments/assets/5a9d526d-93c7-4319-9c73-4173bd0e8bfa" />
-<img width="1389" height="390" alt="image" src="https://github.com/user-attachments/assets/bf01f4fc-1316-4185-bfa1-16a2ca8fbb17" />
+## 📌 Project Highlights
 
-## 📊 Learning Curves
+- 📦 **Automatic dataset loading** via `torchvision.datasets.GTSRB`
+- 🖼️ Image preprocessing: resizing to `224x224`, ImageNet normalization
+- 📊 Class distribution analysis (bar chart and pie chart)
+- 🎨 Grad-CAM++ for visual explainability
+- 📈 Accuracy, loss, and F1-score curves
+- 📥 Model saving based on best validation F1-score
 
+---
 
-### 🔹 Fine-Tuned RexNet_150 Accuracy
+## 🧠 Models
 
-#### Train loss and validation loss
-<img width="846" height="448" alt="image" src="https://github.com/user-attachments/assets/216c16f8-d13f-49a1-8920-ea8477d479a6" />
+### 1. 🔧 Custom CNN Model
 
-#### Train and validation accuracy
-<img width="855" height="448" alt="image" src="https://github.com/user-attachments/assets/09d63b1f-5866-4fa2-92a6-b45e8ece211f" />
-
-#### F1 Scores
-<img width="855" height="448" alt="image" src="https://github.com/user-attachments/assets/4a198839-7e25-478d-9347-93b9ecc1fa20" />
-
-
+A 4-block convolutional network with batch normalization and max-pooling:
