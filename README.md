@@ -36,5 +36,5 @@ This project focuses on **multi-class image classification** of the **German Tra
 
 A 4-block convolutional network with batch normalization and max-pooling:
 
-Conv2D --> ReLU --> BatchNorm --> MaxPool (x4 blocks)
-Flatten --> FC(128) --> ReLU(= --> FC(43)
+Conv2D --> ReLU --> BatchNorm --> MaxPool (x4 blocks)     
+Flatten --> FC(128) --> ReLU --> FC(43)
