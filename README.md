@@ -95,9 +95,13 @@ Visualizes model attention on correct and incorrect predictions.
 
 - 🔥 Grad-CAM++ overlay on test images  
 - ✅ Prediction probability bar chart  
-- 📉 Confusion matrix for all 43 classes
 
-![Grad-CAM Example](https://github.com/user-attachments/assets/ed801bec-05a6-4065-9a0e-3b78e4d2f4d4)
+<img width="1597" height="839" alt="image" src="https://github.com/user-attachments/assets/bad53e4e-9c14-4368-9e19-ed5537dde07c" />
+
+- 📉 Confusion matrix for all 43 classes
+- ![Grad-CAM Example](https://github.com/user-attachments/assets/ed801bec-05a6-4065-9a0e-3b78e4d2f4d4)
+
+
 
 ---
 
@@ -119,3 +123,12 @@ pip install -r requirements.txt
 
 # Run training
 python train.py  # Or use the notebook provided
+
+```
+
+## 📚 Tech Stack
+* Python, PyToch, torchvision
+* timm for pretrained models
+* torchmetrics for F1-score
+* *Grad-CAM++*: Visualizes where the model is looking when making a prediction.
+* Confusion matrix  to visualize classification performance
