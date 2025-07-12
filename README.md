@@ -29,14 +29,18 @@ This project implements image classification on the German Traffic Sign Recognit
 <img width="1389" height="390" alt="image" src="https://github.com/user-attachments/assets/5a9d526d-93c7-4319-9c73-4173bd0e8bfa" />
 <img width="1389" height="390" alt="image" src="https://github.com/user-attachments/assets/bf01f4fc-1316-4185-bfa1-16a2ca8fbb17" />
 
-## 📊 Training Curves
+## 📊 Learning Curves
 
-### 🔹 Custom CNN Accuracy
 
-![CNN Accuracy](images/cnn_accuracy.png)
+### 🔹 Fine-Tuned RexNet_150 Accuracy
 
----
+#### Train loss and validation loss
+<img width="846" height="448" alt="image" src="https://github.com/user-attachments/assets/216c16f8-d13f-49a1-8920-ea8477d479a6" />
 
-### 🔹 Fine-Tuned ResNet18 Accuracy
+#### Train and validation accuracy
+<img width="855" height="448" alt="image" src="https://github.com/user-attachments/assets/09d63b1f-5866-4fa2-92a6-b45e8ece211f" />
 
-![ResNet Accuracy](images/resnet_accuracy.png)
+#### F1 Scores
+<img width="855" height="448" alt="image" src="https://github.com/user-attachments/assets/4a198839-7e25-478d-9347-93b9ecc1fa20" />
+
+
